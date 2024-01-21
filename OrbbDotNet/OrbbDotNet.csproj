@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>10.0</LangVersion>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="..\externals\OrbbecSdk\win_x64\OrbbecSDK.dll" Link="OrbbecSDK.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Visible>False</Visible>
+    </Content>
+    <Content Include="..\externals\OrbbecSdk\win_x64\OrbbecSDK.license" Link="OrbbecSDK.license">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Visible>False</Visible>
+    </Content>
+    <Content Include="..\externals\OrbbecSdk\win_x64\OrbbecSDKConfig_v1.0.xml" Link="OrbbecSDKConfig_v1.0.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Visible>False</Visible>
+    </Content>
+  </ItemGroup>
+
+</Project>
